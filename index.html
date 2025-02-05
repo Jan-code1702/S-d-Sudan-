@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration im Südsudan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .quiz {
+            margin-top: 30px;
+        }
+        .quiz button {
+            display: block;
+            margin: 10px 0;
+        }
+        .correct {
+            background-color: green !important;
+        }
+        .wrong {
+            background-color: red !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Migration im Südsudan
+    </header>
+
+    <div class="container">
+        <h1>🗺️ Ursachen der Migration im Südsudan</h1>
+        <p id="info">
+            Der Südsudan ist eines der am stärksten von Migration betroffenen Länder der Welt.  
+            Millionen von Menschen sind auf der Flucht – sei es innerhalb des Landes oder in Nachbarstaaten.  
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/IDP_camp_in_Bentiu%2C_South_Sudan.jpg/800px-IDP_camp_in_Bentiu%2C_South_Sudan.jpg" alt="Flüchtlingslager im Südsudan">
+        <button onclick="vorlesen()">🔊 Vorlesen</button>
+
+        <h2>📌 Hauptgründe für Migration</h2>
+        <ul>
+            <li>⚔️ **Bürgerkrieg:** Seit 2013 gibt es bewaffnete Konflikte, die Millionen zur Flucht zwingen.</li>
+            <li>🌿 **Klimawandel:** Dürren und Überschwemmungen zerstören Ernten und Lebensgrundlagen.</li>
+            <li>🍽️ **Hunger:** Viele Menschen haben keinen Zugang zu ausreichender Nahrung.</li>
+            <li>🏥 **Mangelnde Gesundheitsversorgung:** Krankheiten breiten sich aus, weil es kaum medizinische Hilfe gibt.</li>
+        </ul>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/UN_Mission_in_South_Sudan.jpg/800px-UN_Mission_in_South_Sudan.jpg" alt="UN-Hilfseinsatz im Südsudan">
+
+        <h2>🚶 Wohin fliehen die Menschen?</h2>
+        <p>Die meisten Südsudanesen suchen Schutz in:</p>
+        <ul>
+            <li>🇺🇬 **Uganda** – Über 1 Million Geflüchtete</li>
+            <li>🇪🇹 **Äthiopien** – Hunderttausende Menschen</li>
+            <li>🇸🇩 **Sudan** – Viele Südsudanesen fliehen ins Nachbarland Sudan</li>
+        </ul>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/South_Sudan_refugee_children_in_Uganda.jpg" alt="Südsudanesische Flüchtlingskinder in Uganda">
+
+        <h2>🔄 Lösungen und Perspektiven</h2>
+        <p>Organisationen wie die **UNHCR** und das **Rote Kreuz** versuchen, Hilfe zu leisten, indem sie Nahrung, Wasser und Schutz bereitstellen.</p>
+
+        <hr>
+
+        <h2>🧠 Quiz: Teste dein Wissen!</h2>
+        <div class="quiz">
+            <p>1. Was ist der häufigste Grund für die Flucht aus dem Südsudan?</p>
+            <button onclick="checkAnswer(this, true)">a) Bürgerkrieg</button>
+            <button onclick="checkAnswer(this, false)">b) Tourismus</button>
+            <button onclick="checkAnswer(this, false)">c) Industrie</button>
+
+            <p>2. In welches Land fliehen die meisten Menschen?</p>
+            <button onclick="checkAnswer(this, false)">a) Deutschland</button>
+           
