@@ -5,109 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migration im Südsudan</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #007BFF;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        img {
-            width: 100%;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-        button {
-            background: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px;
-            margin: 5px 0;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        button:hover {
-            background: #0056b3;
-        }
-        .quiz {
-            margin-top: 30px;
-        }
-        .quiz button {
-            display: block;
-            margin: 10px 0;
-        }
-        .correct {
-            background-color: green !important;
-        }
-        .wrong {
-            background-color: red !important;
-        }
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        h1, h2 { color: #333; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px gray; }
+        img { max-width: 100%; border-radius: 8px; margin-bottom: 10px; }
+        .quiz { margin-top: 20px; padding: 10px; background: #e3e3e3; border-radius: 8px; }
     </style>
 </head>
 <body>
-
-    <header>
-        Migration im Südsudan
-    </header>
-
     <div class="container">
-        <h1>🗺️ Ursachen der Migration im Südsudan</h1>
-        <p id="info">
-            Der Südsudan ist eines der am stärksten von Migration betroffenen Länder der Welt.  
-            Millionen von Menschen sind auf der Flucht – sei es innerhalb des Landes oder in Nachbarstaaten.  
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/IDP_camp_in_Bentiu%2C_South_Sudan.jpg/800px-IDP_camp_in_Bentiu%2C_South_Sudan.jpg" alt="Flüchtlingslager im Südsudan">
-        <button onclick="vorlesen()">🔊 Vorlesen</button>
-
-        <h2>📌 Hauptgründe für Migration</h2>
+        <h1>🌍 Migration im Südsudan</h1>
+        <p>Der Südsudan ist eines der jüngsten Länder der Welt und erlebt eine der schlimmsten Flüchtlingskrisen unserer Zeit. Millionen Menschen verlassen ihre Heimat aufgrund von <b>Bürgerkrieg, Hunger und Klimawandel</b>.</p>
+        
+        <h2>📍 Ursachen der Migration</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/South_Sudan_refugees.png/800px-South_Sudan_refugees.png" alt="Flüchtlingsbewegung">
         <ul>
-            <li>⚔️ **Bürgerkrieg:** Seit 2013 gibt es bewaffnete Konflikte, die Millionen zur Flucht zwingen.</li>
-            <li>🌿 **Klimawandel:** Dürren und Überschwemmungen zerstören Ernten und Lebensgrundlagen.</li>
-            <li>🍽️ **Hunger:** Viele Menschen haben keinen Zugang zu ausreichender Nahrung.</li>
-            <li>🏥 **Mangelnde Gesundheitsversorgung:** Krankheiten breiten sich aus, weil es kaum medizinische Hilfe gibt.</li>
-        </ul>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/UN_Mission_in_South_Sudan.jpg/800px-UN_Mission_in_South_Sudan.jpg" alt="UN-Hilfseinsatz im Südsudan">
-
-        <h2>🚶 Wohin fliehen die Menschen?</h2>
-        <p>Die meisten Südsudanesen suchen Schutz in:</p>
-        <ul>
-            <li>🇺🇬 **Uganda** – Über 1 Million Geflüchtete</li>
-            <li>🇪🇹 **Äthiopien** – Hunderttausende Menschen</li>
-            <li>🇸🇩 **Sudan** – Viele Südsudanesen fliehen ins Nachbarland Sudan</li>
+            <li><b>Bürgerkrieg (seit 2013):</b> Unterschiedliche ethnische Gruppen kämpfen um Macht, was zu Massakern, Vergewaltigungen und Vertreibungen geführt hat.</li>
+            <li><b>Wirtschaftlicher Kollaps:</b> Die Inflation ist extrem hoch, und viele Menschen können sich nicht einmal Grundnahrungsmittel leisten.</li>
+            <li><b>Klimawandel:</b> Häufige Dürreperioden und Überschwemmungen zerstören die Landwirtschaft.</li>
         </ul>
 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/South_Sudan_refugee_children_in_Uganda.jpg" alt="Südsudanesische Flüchtlingskinder in Uganda">
+        <h2>⚠️ Auswirkungen der Krise</h2>
+        <p>Mehr als <b>2,3 Millionen Südsudanesen</b> sind ins Ausland geflüchtet. Rund 1,6 Millionen Menschen sind innerhalb des Landes auf der Flucht. Die meisten Flüchtlinge befinden sich in:</p>
+        <ul>
+            <li>Uganda (1 Million Flüchtlinge)</li>
+            <li>Sudan (800.000 Flüchtlinge)</li>
+            <li>Äthiopien (400.000 Flüchtlinge)</li>
+        </ul>
+        <img src="https://www.unhcr.org/5e8d2d4b4.jpg" alt="Flüchtlingslager">
+        <p>In den Flüchtlingslagern fehlt es an Nahrung, Wasser, Medikamenten und Bildungseinrichtungen. Krankheiten wie Cholera breiten sich rasant aus.</p>
 
-        <h2>🔄 Lösungen und Perspektiven</h2>
-        <p>Organisationen wie die **UNHCR** und das **Rote Kreuz** versuchen, Hilfe zu leisten, indem sie Nahrung, Wasser und Schutz bereitstellen.</p>
+        <h2>🌍 Internationale Hilfsmaßnahmen</h2>
+        <p>Einige Organisationen versuchen, die Krise zu lindern:</p>
+        <ul>
+            <li><b>UNHCR:</b> Versorgt Flüchtlinge mit Wasser, Nahrung und Zelten.</li>
+            <li><b>World Food Programme (WFP):</b> Liefert Nahrungsmittel an unterernährte Menschen.</li>
+            <li><b>Rotes Kreuz:</b> Stellt medizinische Hilfe bereit.</li>
+        </ul>
+        
+        <h2>🛠 Mögliche Lösungen</h2>
+        <p>Langfristige Lösungen müssen sowohl politisch als auch wirtschaftlich sein:</p>
+        <ul>
+            <li>Friedensabkommen zwischen den Konfliktparteien umsetzen.</li>
+            <li>Internationale Hilfe effizienter organisieren.</li>
+            <li>Landwirtschaftliche Projekte fördern, um die Ernährungssicherheit zu verbessern.</li>
+        </ul>
 
-        <hr>
-
-        <h2>🧠 Quiz: Teste dein Wissen!</h2>
+        <h2>🎯 Teste dein Wissen! (Quiz)</h2>
         <div class="quiz">
-            <p>1. Was ist der häufigste Grund für die Flucht aus dem Südsudan?</p>
-            <button onclick="checkAnswer(this, true)">a) Bürgerkrieg</button>
-            <button onclick="checkAnswer(this, false)">b) Tourismus</button>
-            <button onclick="checkAnswer(this, false)">c) Industrie</button>
+            <p><b>1. Wann wurde der Südsudan unabhängig?</b></p>
+            <input type="radio" name="q1"> a) 2011<br>
+            <input type="radio" name="q1"> b) 2005<br>
+            <input type="radio" name="q1"> c) 2019<br>
 
-            <p>2. In welches Land fliehen die meisten Menschen?</p>
-            <button onclick="checkAnswer(this, false)">a) Deutschland</button>
-           
+            <p><b>2. Welche Länder nehmen die meisten südsudanesischen Flüchtlinge auf?</b></p>
+            <input type="radio" name="q2"> a) Deutschland & USA<br>
+            <input type="radio" name="q2"> b) Uganda, Sudan & Äthiopien<br>
+            <input type="radio" name="q2"> c) Kanada & Australien<br>
+
+            <p><b>3. Was sind Hauptgründe für die Flucht aus dem Südsudan?</b></p>
+            <input type="radio" name="q3"> a) Nur Armut<br>
+            <input type="radio" name="q3"> b) Bürgerkrieg, Hunger & Klimawandel<br>
+            <input type="radio" name="q3"> c) Schlechte Straßen und Internetverbindung<br>
+
+            <p><b>4. Welche Organisation hilft Flüchtlingen mit Nahrung?</b></p>
+            <input type="radio" name="q4"> a) Apple<br>
+            <input type="radio" name="q4"> b) World Food Programme (WFP)<br>
+            <input type="radio" name="q4"> c) NASA<br>
+
+            <p><b>5. Wie viele Menschen sind im Südsudan auf der Flucht?</b></p>
+            <input type="radio" name="q5"> a) 100.000<br>
+            <input type="radio" name="q5"> b) 3 Millionen<br>
+            <input type="radio" name="q5"> c) 50 Millionen<br>
+
+            <p><b>6. Welche Klimaprobleme gibt es im Südsudan?</b></p>
+            <input type="radio" name="q6"> a) Dürreperioden & Überschwemmungen<br>
+            <input type="radio" name="q6"> b) Vulkanausbrüche<br>
+            <input type="radio" name="q6"> c) Schneestürme<br>
+
+            <p><b>7. Welche politische Lösung könnte die Krise beenden?</b></p>
+            <input type="radio" name="q7"> a) Ein Friedensabkommen<br>
+            <input type="radio" name="q7"> b) Mehr Waffenlieferungen<br>
+            <input type="radio" name="q7"> c) Strengere Internetkontrollen<br>
+
+            <button onclick="alert('Danke fürs Mitmachen! Überprüfe deine Antworten.')">Quiz abschließen</button>
+        </div>
+    </div>
+</body>
+</html>
